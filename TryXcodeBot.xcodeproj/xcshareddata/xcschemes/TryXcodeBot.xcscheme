@@ -108,5 +108,14 @@
    <ArchiveAction
       buildConfiguration = "Release"
       revealArchiveInOrganizer = "YES">
+      <PostActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "#!/bin/bash&#10;&#10;PRODUCT_NAME=&quot;TryXcodeBot&quot;&#10;&#10;PROVISIONING_PROFILE=&quot;/var/_xcsbuildd/Library/MobileDevice/Provisioning Profiles/6e3fb49d-bf3b-4f79-badc-97d03a76fa73.mobileprovision&quot;&#10;# PROVISIONING_PROFILE=&quot;/Users/thongchai/Desktop/provisioning profiles/Hlung_Try_Xcode_Bot_Distribution.mobileprovision&quot;&#10;#EXAMPLE:&quot;/Library/Server/Xcode/Data/ProvisioningProfiles/DocLink_InHouse_2013.mobileprovision&quot;&#10;&#10;SIGNING_IDENTITY=&quot;iPhone Distribution: Oozou Limited&quot;&#10;#EXAMPLE:&quot;iPhone Distribution: Unwired Revolution, LLC.&quot;&#10;&#10;# DO NOT EDIT BELOW HERE!&#10;########################################&#10;DSYM=&quot;/tmp/Archive.xcarchive/dSYMs/${PRODUCT_NAME}.app.dSYM&quot;&#10;&#10;IPA=&quot;/tmp/${PRODUCT_NAME}.ipa&quot;&#10;&#10;APP=&quot;/tmp/Archive.xcarchive/Products/Applications/${PRODUCT_NAME}.app&quot;&#10;&#10;# Clear out any old copies of the Archive&#10;echo &quot;Removing old Archive files from /tmp...&quot;;&#10;/bin/rm -rf /tmp/Archive.xcarchive*&#10;&#10;#Copy over the latest build the bot just created&#10;echo &quot;Copying latest Archive to /tmp/...&quot;;&#10;# LATESTBUILD=$(ls -1rt /Library/Server/Xcode/Data/BotRuns | tail -1)&#10;# /bin/cp -Rp &quot;/Library/Server/Xcode/Data/BotRuns/${LATESTBUILD}/output/Archive.xcarchive&quot; &quot;/tmp/&quot;&#10;/bin/cp -Rp &quot;${XCS_ARCHIVE}&quot; &quot;/tmp/&quot;&#10;&#10;echo &quot;Creating .ipa for ${PRODUCT_NAME}&quot;&#10;/bin/rm &quot;${IPA}&quot;&#10;/usr/bin/xcrun -sdk iphoneos PackageApplication -v &quot;${APP}&quot; -o &quot;${IPA}&quot; --sign &quot;${SIGNING_IDENTITY}&quot; --embed &quot;${PROVISIONING_PROFILE}&quot;&#10;&#10;echo &quot;Done with IPA creation.&quot;&#10;&#10;ipa distribute:itunesconnect -f &quot;${IPA}&quot; -a hlung+oozou@oozou.com -p &quot;iBwx9oMMNGNBMg2i4DscRWY4FNwGsP79&quot; -i 1036597892 --upload --verbose&#10;&#10;echo &quot;TestFlight upload finished!&quot;">
+            </ActionContent>
+         </ExecutionAction>
+      </PostActions>
    </ArchiveAction>
 </Scheme>

@@ -126,6 +126,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E016BE271B98016600156692 /* Build configuration list for PBXNativeTarget "TryXcodeBot" */;
 			buildPhases = (
+				E016BE2D1B98128B00156692 /* Update Build Number as Commit Count */,
 				E016BE001B98016600156692 /* Sources */,
 				E016BE011B98016600156692 /* Frameworks */,
 				E016BE021B98016600156692 /* Resources */,
@@ -213,6 +214,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E016BE2D1B98128B00156692 /* Update Build Number as Commit Count */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Update Build Number as Commit Count";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"CONFIG $CONFIGURATION\"\nif [ \"$CONFIGURATION\" != \"Release\" ]; then\nexit 0\nfi\n\nBUILD_NUMBER=$(git rev-list HEAD --count)\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $BUILD_NUMBER\" \"$INFOPLIST_FILE\"\n\n# For debugging:\necho \"BUILD NUMBER: $BUILD_NUMBER\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E016BE001B98016600156692 /* Sources */ = {
@@ -416,6 +434,7 @@
 				E016BE291B98016600156692 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E016BE2A1B98016600156692 /* Build configuration list for PBXNativeTarget "TryXcodeBotTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +443,7 @@
 				E016BE2C1B98016600156692 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
