@@ -16,6 +16,7 @@
 		E016BE181B98016600156692 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E016BE161B98016600156692 /* LaunchScreen.xib */; };
 		E016BE241B98016600156692 /* TryXcodeBotTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E016BE231B98016600156692 /* TryXcodeBotTests.m */; };
 		E0502F3E1BAFF36800623699 /* MyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E0502F3D1BAFF36800623699 /* MyObject.m */; settings = {ASSET_TAGS = (); }; };
+		E0502F3F1BAFF9FC00623699 /* MyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E0502F3D1BAFF36800623699 /* MyObject.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -309,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0502F3F1BAFF9FC00623699 /* MyObject.m in Sources */,
 				E016BE241B98016600156692 /* TryXcodeBotTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
