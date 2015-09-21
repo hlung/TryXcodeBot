@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <LinqToObjectiveC/NSArray+LinqExtensions.h>
 
 @interface AppDelegate ()
 
@@ -16,6 +17,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    NSArray *array = @[@"b", @"a", @"c"];
+    NSArray* sorted = [array linq_sort];
+    NSLog(@"%@", sorted); // should be @[@"a", @"b", @"c"]
     // Override point for customization after application launch.
     return YES;
 }

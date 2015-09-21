@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D0B3302E7AE741BBAAEE8C42 /* libPods-TryXcodeBot.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DCE5CCA145FCE297FD8FFCD /* libPods-TryXcodeBot.a */; };
 		E016BE0A1B98016600156692 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E016BE091B98016600156692 /* main.m */; };
 		E016BE0D1B98016600156692 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E016BE0C1B98016600156692 /* AppDelegate.m */; };
 		E016BE101B98016600156692 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E016BE0F1B98016600156692 /* ViewController.m */; };
@@ -27,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3DCE5CCA145FCE297FD8FFCD /* libPods-TryXcodeBot.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TryXcodeBot.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		661B86EE54AA5504898F31F2 /* Pods-TryXcodeBot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryXcodeBot.release.xcconfig"; path = "Pods/Target Support Files/Pods-TryXcodeBot/Pods-TryXcodeBot.release.xcconfig"; sourceTree = "<group>"; };
+		B73A73D4354186BE20FAB292 /* Pods-TryXcodeBot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryXcodeBot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TryXcodeBot/Pods-TryXcodeBot.debug.xcconfig"; sourceTree = "<group>"; };
 		E016BE041B98016600156692 /* TryXcodeBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TryXcodeBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E016BE081B98016600156692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E016BE091B98016600156692 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0B3302E7AE741BBAAEE8C42 /* libPods-TryXcodeBot.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +65,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26B5F4DD8CFC1FFAD32B427D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B73A73D4354186BE20FAB292 /* Pods-TryXcodeBot.debug.xcconfig */,
+				661B86EE54AA5504898F31F2 /* Pods-TryXcodeBot.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4A28461119B8E28A275158D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCE5CCA145FCE297FD8FFCD /* libPods-TryXcodeBot.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E016BDFB1B98016600156692 = {
 			isa = PBXGroup;
 			children = (
 				E016BE061B98016600156692 /* TryXcodeBot */,
 				E016BE201B98016600156692 /* TryXcodeBotTests */,
 				E016BE051B98016600156692 /* Products */,
+				26B5F4DD8CFC1FFAD32B427D /* Pods */,
+				4A28461119B8E28A275158D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,10 +150,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E016BE271B98016600156692 /* Build configuration list for PBXNativeTarget "TryXcodeBot" */;
 			buildPhases = (
+				D719C73524F983681DD68192 /* Check Pods Manifest.lock */,
 				E016BE2D1B98128B00156692 /* Update Build Number as Commit Count */,
 				E016BE001B98016600156692 /* Sources */,
 				E016BE011B98016600156692 /* Frameworks */,
 				E016BE021B98016600156692 /* Resources */,
+				463430D11FD0D7F7BAD09195 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -216,6 +242,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		463430D11FD0D7F7BAD09195 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TryXcodeBot/Pods-TryXcodeBot-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D719C73524F983681DD68192 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		E016BE2D1B98128B00156692 /* Update Build Number as Commit Count */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -363,6 +419,7 @@
 		};
 		E016BE281B98016600156692 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B73A73D4354186BE20FAB292 /* Pods-TryXcodeBot.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TryXcodeBot/Info.plist;
@@ -373,6 +430,7 @@
 		};
 		E016BE291B98016600156692 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 661B86EE54AA5504898F31F2 /* Pods-TryXcodeBot.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TryXcodeBot/Info.plist;
