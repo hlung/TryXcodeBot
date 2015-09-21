@@ -52,16 +52,6 @@
                ReferencedContainer = "container:TryXcodeBot.xcodeproj">
             </BuildableReference>
          </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E0502F431BB005D400623699"
-               BuildableName = "TryXcodeBotUnitTests.xctest"
-               BlueprintName = "TryXcodeBotUnitTests"
-               ReferencedContainer = "container:TryXcodeBot.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
