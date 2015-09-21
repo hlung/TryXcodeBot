@@ -1,11 +1,15 @@
 # Uncomment this line to define a global platform for your project
 # platform :ios, '6.0'
 
-target 'TryXcodeBot' do
+def common_pods
 pod 'LinqToObjectiveC', '~> 2.0.0'
 end
 
-target 'TryXcodeBotTests' do
+target 'TryXcodeBot' do
+common_pods
+end
 
+target 'TryXcodeBotTests' do
+common_pods
 end
 
