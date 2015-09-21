@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "MyObject.h"
 
 @interface TryXcodeBotTests : XCTestCase
 
@@ -18,6 +19,8 @@
 - (void)setUp {
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    
 }
 
 - (void)tearDown {
@@ -26,8 +29,14 @@
 }
 
 - (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
+    
+    NSArray *array = @[@"b", @"a", @"c"];
+    NSLog(@"array %@", array);
+    NSArray *sorted = [MyObject sortedArray:array];
+    NSLog(@"sorted array %@", sorted);// should be @[@"a", @"b", @"c"]
+    
+    BOOL eq = [sorted isEqualToArray:@[@"a", @"b", @"c"]];
+    XCTAssert(eq, @"Pass");
 }
 
 - (void)testPerformanceExample {
