@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C9D3F2857A2A0764CBFCD652 /* libPods-TryXcodeBotTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB12EABADB6B66202B6C846D /* libPods-TryXcodeBotTests.a */; };
 		D0B3302E7AE741BBAAEE8C42 /* libPods-TryXcodeBot.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DCE5CCA145FCE297FD8FFCD /* libPods-TryXcodeBot.a */; };
 		E016BE0A1B98016600156692 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E016BE091B98016600156692 /* main.m */; };
 		E016BE0D1B98016600156692 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E016BE0C1B98016600156692 /* AppDelegate.m */; };
@@ -17,7 +16,6 @@
 		E016BE181B98016600156692 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E016BE161B98016600156692 /* LaunchScreen.xib */; };
 		E016BE241B98016600156692 /* TryXcodeBotTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E016BE231B98016600156692 /* TryXcodeBotTests.m */; };
 		E0502F3E1BAFF36800623699 /* MyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E0502F3D1BAFF36800623699 /* MyObject.m */; settings = {ASSET_TAGS = (); }; };
-		E0502F3F1BAFF9FC00623699 /* MyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E0502F3D1BAFF36800623699 /* MyObject.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,12 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		241A71467829D42DC3E480B8 /* Pods-TryXcodeBotTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryXcodeBotTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TryXcodeBotTests/Pods-TryXcodeBotTests.release.xcconfig"; sourceTree = "<group>"; };
 		3DCE5CCA145FCE297FD8FFCD /* libPods-TryXcodeBot.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TryXcodeBot.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		661B86EE54AA5504898F31F2 /* Pods-TryXcodeBot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryXcodeBot.release.xcconfig"; path = "Pods/Target Support Files/Pods-TryXcodeBot/Pods-TryXcodeBot.release.xcconfig"; sourceTree = "<group>"; };
-		B208A1FFA6747BB74FA3B733 /* Pods-TryXcodeBotTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryXcodeBotTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TryXcodeBotTests/Pods-TryXcodeBotTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B73A73D4354186BE20FAB292 /* Pods-TryXcodeBot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryXcodeBot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TryXcodeBot/Pods-TryXcodeBot.debug.xcconfig"; sourceTree = "<group>"; };
-		CB12EABADB6B66202B6C846D /* libPods-TryXcodeBotTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TryXcodeBotTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E016BE041B98016600156692 /* TryXcodeBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TryXcodeBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E016BE081B98016600156692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E016BE091B98016600156692 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -52,7 +47,6 @@
 		E016BE231B98016600156692 /* TryXcodeBotTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TryXcodeBotTests.m; sourceTree = "<group>"; };
 		E0502F3C1BAFF36800623699 /* MyObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyObject.h; sourceTree = "<group>"; };
 		E0502F3D1BAFF36800623699 /* MyObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyObject.m; sourceTree = "<group>"; };
-		E7EA0028C2B9C6C2479AA2EC /* libPods-TryXcodeBotUnitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TryXcodeBotUnitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +62,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9D3F2857A2A0764CBFCD652 /* libPods-TryXcodeBotTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,8 +73,6 @@
 			children = (
 				B73A73D4354186BE20FAB292 /* Pods-TryXcodeBot.debug.xcconfig */,
 				661B86EE54AA5504898F31F2 /* Pods-TryXcodeBot.release.xcconfig */,
-				B208A1FFA6747BB74FA3B733 /* Pods-TryXcodeBotTests.debug.xcconfig */,
-				241A71467829D42DC3E480B8 /* Pods-TryXcodeBotTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -90,8 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				3DCE5CCA145FCE297FD8FFCD /* libPods-TryXcodeBot.a */,
-				CB12EABADB6B66202B6C846D /* libPods-TryXcodeBotTests.a */,
-				E7EA0028C2B9C6C2479AA2EC /* libPods-TryXcodeBotUnitTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -186,11 +175,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E016BE2A1B98016600156692 /* Build configuration list for PBXNativeTarget "TryXcodeBotTests" */;
 			buildPhases = (
-				66AD8511498CE6B468DA76E6 /* Check Pods Manifest.lock */,
 				E016BE191B98016600156692 /* Sources */,
 				E016BE1A1B98016600156692 /* Frameworks */,
 				E016BE1B1B98016600156692 /* Resources */,
-				2C99FE7788BCF8DF670C59DF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -216,6 +203,7 @@
 					};
 					E016BE1C1B98016600156692 = {
 						CreatedOnToolsVersion = 6.4;
+						TestTargetID = E016BE031B98016600156692;
 					};
 				};
 			};
@@ -259,21 +247,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2C99FE7788BCF8DF670C59DF /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TryXcodeBotTests/Pods-TryXcodeBotTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		463430D11FD0D7F7BAD09195 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -287,21 +260,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TryXcodeBot/Pods-TryXcodeBot-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		66AD8511498CE6B468DA76E6 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		D719C73524F983681DD68192 /* Check Pods Manifest.lock */ = {
@@ -351,7 +309,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0502F3F1BAFF9FC00623699 /* MyObject.m in Sources */,
 				E016BE241B98016600156692 /* TryXcodeBotTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,8 +447,8 @@
 		};
 		E016BE2B1B98016600156692 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B208A1FFA6747BB74FA3B733 /* Pods-TryXcodeBotTests.debug.xcconfig */;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -503,13 +460,14 @@
 				INFOPLIST_FILE = TryXcodeBotTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TryXcodeBot.app/TryXcodeBot";
 			};
 			name = Debug;
 		};
 		E016BE2C1B98016600156692 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 241A71467829D42DC3E480B8 /* Pods-TryXcodeBotTests.release.xcconfig */;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -517,6 +475,7 @@
 				INFOPLIST_FILE = TryXcodeBotTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TryXcodeBot.app/TryXcodeBot";
 			};
 			name = Release;
 		};
